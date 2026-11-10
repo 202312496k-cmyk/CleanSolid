@@ -13,8 +13,8 @@
     const emailsUsers = dataUsers.map( users => users.email );
 
     // Variables booleanas de un video juego
-    const isJumping = false;
-    const isRunning = true;
+    const canJump = false;
+    const canRun = true;
     const hasItems = true;
     const isLoading = false;
 
