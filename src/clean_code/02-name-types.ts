@@ -10,7 +10,7 @@
     const dataUsers = [{id: 1, email: 'fernando@google.com'},{ id: 2, email: 'juan@google.com' }, { id: 3, email: 'melissa@google.com' }];
 
     // Listado de emails de los usuarios
-    const emailsUsers = dataUsers.map( u => u.email );
+    const emailsUsers = dataUsers.map( users => users.email );
 
     // Variables booleanas de un video juego
     const isJumping = false;
@@ -43,7 +43,7 @@
     }
 
     // imprime el trabajo
-    function printJobIfJobIsActive() {
+    function printJob() {
         throw new Error('Function not implemented.');
     }
 
