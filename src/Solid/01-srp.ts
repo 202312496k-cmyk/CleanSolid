@@ -30,14 +30,26 @@
     
     }
     
-
+    class CartBloc {
+        anADDToCart(productId: number) {
+            console.log('Agregando al carrito ', productId );
+        }
+    }
+    class MailerBloc {
+        notifyClients(){
+            console.log("Enviando correo a los clientes");
+        }
+    }
 
     const productBloc = new ProductBloc();
-
+    const cartBloc    = new CartBloc();
+    const mailerBloc  = new MailerBloc();
+    
     productBloc.loadProduct(10);
     productBloc.saveProduct({ id: 10, name: 'OLED TV' });
     productBloc.notifyClients();
-    productBloc.onAddToCart(10);
+    cartBloc.anADDToCart(10);
+
 
 
 
